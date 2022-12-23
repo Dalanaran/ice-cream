@@ -4,15 +4,31 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/product/bg-product-mobile-2x.jpg);
+    }
     
     @media screen and (min-width:768px) and (max-width:1199px) {
         background-image: url(../images/product/bg-product-tablet.jpg);
-        
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/product/bg-product-tablet-2x.jpg);       
+        }
     }
     
     @media screen and (min-width:1200px) {
         background-image: url(../images/product/bg-product-desktop.jpg);
-        
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url(../images/product/bg-product-desktop-2x.jpg);
+        }      
     }
 }
 
@@ -83,6 +99,10 @@
         margin-bottom: 168px;
     }
     
+    @media screen and (min-width:480px) and (max-width:767px) {
+        height: 350px;
+    }
+
     @media screen and (min-width:768px) and (max-width:1199px) {
         width: calc(1/3*100% - (1 - 1/3)*16px);
         height: 428px;
@@ -130,6 +150,16 @@
             width: 100%;
         }
 
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background:
+                    no-repeat top/100% url(../images/product/ice-cream-tablet-2x.png),
+                    linear-gradient(0deg, rgba(156, 190, 143, 0.7),
+                    rgba(156, 190, 143, 0.7)),
+                    #D9D9D9;
+        }  
+
         @media screen and (min-width:768px) and (max-width:1199px) {
             top: -123px;
             height: 212px;
@@ -147,6 +177,16 @@
                 linear-gradient(0deg, rgba(156, 190, 143, 0.7),
                 rgba(156, 190, 143, 0.7)),
                 #D9D9D9; 
+            
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background:
+                        no-repeat top/100% url(../images/product/ice-cream-desktop-2x.png),
+                        linear-gradient(0deg, rgba(156, 190, 143, 0.7),
+                            rgba(156, 190, 143, 0.7)),
+                        #D9D9D9;
+            }
         }
     }
 }
@@ -173,6 +213,16 @@
             width: 100%;
         }
 
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background:
+                    no-repeat top/100% url(../images/product/ice-coffee-tablet-2x.png),
+                    linear-gradient(0deg, rgba(248, 210, 78, 0.7),
+                    rgba(248, 210, 78, 0.7)),
+                    #D9D9D9;
+        }
+
         @media screen and (min-width:768px) and (max-width:1199px) {
             top: -123px;
             height: 212px;
@@ -189,7 +239,17 @@
                 url(../images/product/ice-coffee-desktop.png),
                 linear-gradient(0deg, rgba(248, 210, 78, 0.7),
                 rgba(248, 210, 78, 0.7)),
-                #D9D9D9;            
+                #D9D9D9;
+            
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background:
+                        no-repeat top/100% url(../images/product/ice-coffee-desktop-2x.png),
+                        linear-gradient(0deg, rgba(248, 210, 78, 0.7),
+                        rgba(248, 210, 78, 0.7)),
+                        #D9D9D9;
+            }
         }
     }
 }
@@ -216,6 +276,16 @@
             width: 100%;
         }
 
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background:
+                    no-repeat top/100% url(../images/product/milkshakes-tablet-2x.png),
+                    linear-gradient(0deg, rgba(213, 117, 63, 0.7),
+                    rgba(213, 117, 63, 0.7)),
+                    #D9D9D9;
+        }
+
         @media screen and (min-width:768px) and (max-width:1199px) {
             top: -123px;
             height: 212px;
@@ -232,13 +302,19 @@
                 url(../images/product/milkshakes-desktop.png),
                 linear-gradient(0deg, rgba(213, 117, 63, 0.7),
                 rgba(213, 117, 63, 0.7)),
-                #D9D9D9;                
+                #D9D9D9;
+            
+            @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background:
+                        no-repeat top/100% url(../images/product/milkshakes-desktop-2x.png),
+                        linear-gradient(0deg, rgba(213, 117, 63, 0.7),
+                        rgba(213, 117, 63, 0.7)),
+                        #D9D9D9;
+            }
         }
     }
-}
-
-.product-img-box {
-
 }
 
 .product-h3 {
@@ -279,4 +355,99 @@
 
 .product-btn {
     margin-top: auto;
+}
+
+
+// ----- Slider ------
+
+.container-gallery {
+    margin: 0 auto;
+    width: 320px;
+    padding: 0 20px 94px 20px;
+    
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        width: 768px;
+        padding: 0 32px 94px 32px;
+        
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 1200px;
+        padding: 0 93px 94px 94px;
+    }
+}
+
+
+.container__review {
+        margin: 0 auto;
+            width: 320px;
+            padding: 50px 20px 40px 20px;
+        
+            @media screen and (min-width:768px) and (max-width:1199px) {
+                width: 768px;
+                padding: 50px 32px 50px 32px;
+        
+            }
+        
+            @media screen and (min-width:1200px) {
+                width: 1200px;
+                padding: 70px 116px 70px 117px;
+            }
+}
+
+.review__photo{
+    width: 85px;
+    margin: 0 auto 32px auto;
+}
+
+.review__text {
+    background: #84A178;
+    border-radius: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    margin-bottom: 32px;
+    letter-spacing: 0.04em;
+    color: #FCFCFC;
+    padding: 35px 39px;
+   
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        font-weight: 500;
+        font-size: 14px;
+            line-height: 186%;
+            text-align: center;
+        padding: 28px 80px 29px 80px;
+      
+    }
+
+    @media screen and (min-width:1200px) {
+        font-weight: 500;
+            font-size: 16px;
+            line-height: 186%;
+        padding: 43px 74px 41px 73px;
+        
+    }
+}
+
+.review__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+    color: #131313;
+    margin-bottom: 0;
+        @media screen and (min-width:768px) and (max-width:1199px) {
+                            font-size: 16px;
+                            line-height: 186%;
+                            margin-bottom: 20px;
+
+            }
+        
+            @media screen and (min-width:1200px) {
+                font-size: 16px;
+                line-height: 186%;
+                margin-bottom: 20px;
+             
+            }
 }

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Seymour+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"> 
+
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./css/media.min.css">
 </head>
@@ -33,7 +34,7 @@
             <li class="product-item two">
                 <h3 class="product-h3">Ice coffee</h3>
                 <p class="product-text">Fragrant invigorating drink created from 100% natural ingredients without the use of preservatives and flavor enhancers</p>
-                <button type="button" class="product-btn">
+                <button type="button" class="product-btn" data-modal-open2>
                     <svg class="product-svg" width="40" height="16">
                         <use href="./images/icons.svg#icon-arrow"></use>
                     </svg>
@@ -125,13 +126,154 @@
                 <button type="submit" class="btn-submit">Submit</button>    
             </form>
         </div>
+        </div>
+
+<!-- ------Modal2------ -->
+<div class="backdrop is-hidden" data-modal2="">
+    <div class="modal">
+        <button class="modal-btn-close" type="button" data-modal-close2="">
+            <svg class="icon-close" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p class="modal-title">Chololate icecream 2</p>
+        <div class="modal-img-box">
+            <picture>
+                <source srcset="
+                        ./images/modal/ice-cream-modal-mobile.png 1x,
+                        ./images/modal/ice-cream-modal-mobile-2x.png 2x" />
+                <img src="./images/modal/ice-cream-modal-mobile.png" width="132" alt="Ice cream">
+            </picture>
+
+        </div>
+        <div class="consist">
+            <div class="consist-item">
+                <p class="consist-number">320</p>
+                <p class="consist-name">kcal</p>
+            </div>
+            <div class="consist-item">
+                <p class="consist-number">4g</p>
+                <p class="consist-name">Protein...</p>
+            </div>
+            <div class="consist-item">
+                <p class="consist-number">8,2g</p>
+                <p class="consist-name">Fats</p>
+            </div>
+            <div class="consist-item">
+                <p class="consist-number">40,4g</p>
+                <p class="consist-name">Carbs</p>
+            </div>
+        </div>
+        <table class="ingredients">
+            <caption>Ingredients</caption>
+            <tbody>
+                <tr>
+                    <td class="ingredients-name">Milk</td>
+                    <td class="ingredients-count">100ml</td>
+                </tr>
+                <tr>
+                    <td class="ingredients-name">Belgian chocolate</td>
+                    <td class="ingredients-count">20g</td>
+                </tr>
+                <tr>
+                    <td class="ingredients-name">Cream</td>
+                    <td class="ingredients-count">150 ml</td>
+                </tr>
+                <tr>
+                    <td class="ingredients-name">Cocoa powder</td>
+                    <td class="ingredients-count">30g</td>
+                </tr>
+                <tr>
+                    <td class="ingredients-name">Sugar</td>
+                    <td class="ingredients-count">40g</td>
+                </tr>
+                <tr>
+                    <td class="ingredients-name">Vanilla sugar</td>
+                    <td class="ingredients-count">10g</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <input type="text" name="user-name" class="modal-input" placeholder="Name">
+            <input type="tel" name="user-phone" class="modal-input" placeholder="Phone">
+            <textarea name="user-comments" class="modal-comments" placeholder="Comments"></textarea>
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
     </div>
+</div>
+
+<!-- ------Modal2------ -->
+
+<div class="container-gallery">
+    <div class="itc-slider itc-slider-1" data-autoplay="true" data-interval="5000" data-loop="true" data-slider="itc-slider">
+        <div class="itc-slider__wrapper">
+            <div class="itc-slider__items">
+                <div class="itc-slider__item">
+                    <img src="./images/product/slide3.jpg" width="132" alt="Ice cream">
+                </div>
+                <div class="itc-slider__item">
+                    <img src="./images/product/slider1.jpg" width="132" alt="Ice cream">
+                </div>
+                <div class="itc-slider__item">
+                    <img src="./images/product/slider2.jpg" width="132" alt="Ice cream">
+                </div>
+            </div>
+        </div>  
+        <ol class="itc-slider__indicators">
+            <li class="itc-slider__indicator" data-slide-to="0"></li>
+            <li class="itc-slider__indicator" data-slide-to="1"></li>
+            <li class="itc-slider__indicator" data-slide-to="2"></li>
+        </ol>
+    </div>
+</div>
+
+<div class="container container__review">
+    <div class="itc-slider itc-slider-2" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
+        <div class="itc-slider__wrapper">
+            <div class="itc-slider__items">
+                <div class="itc-slider__item">
+    <img class="review__photo" src="./images/product/photo2.jpg" alt="photo__client"
+        width="85">
+    <p class="review__text">I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles! In addition, you have beautiful
+    serving, cozy atmosphere and polite staff.</p>
+    <h3 class="review__title">Emily, Los Angeles</h3>
+                </div>
+                <div class="itc-slider__item">
+    <img class="review__photo" src="./images/product/photo4.jpg" alt="photo__client"
+        width="85">
+    <p class="review__text">Every day we come to you with friends after classes in college. We love your ice cream and casual atmosphere!</p>
+    <h3 class="review__title">Bryan, New-York</h3>
+                </div>
+                <div class="itc-slider__item">
+    <img class="review__photo" src="./images/product/photo3.jpg" alt="photo__client"
+        width="85">
+    <p class="review__text">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I really like the excellent service - always
+    served politely and quickly!</p>
+    <h3 class="review__title">Diana, Chicago</h3>
+                </div>
+            </div>
+        </div>
+        <ol class="itc-slider__indicators">
+            <li class="itc-slider__indicator" data-slide-to="0"></li>
+            <li class="itc-slider__indicator" data-slide-to="1"></li>
+            <li class="itc-slider__indicator" data-slide-to="2"></li>
+        </ol>
+    </div>
+</div>
+                
 </section>
+
+
+    <div class="container__slider"> 
+    </div>
+</div>
 
 </main>
 <footer>
 
 </footer>
+
+<script src="./js/slider.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>
